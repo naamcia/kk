@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kalkulatorek</title>
+    <script>
+        function dodawanie()
+        {
+            var a =parseFloat(document.getElementById("a").value);
+            var b =parseFloat(document.getElementById("b").value);
+            document.getElementById("wynik").innerHTML= a+b;
+        }
+    </script>
+    <script>
+        function odejmowanie()
+        {
+            var a =parseFloat(document.getElementById("a").value);
+            var b =parseFloat(document.getElementById("b").value);
+            document.getElementById("wynik").innerHTML= a-b;
+        }
+    </script>
+    <script>
+        function mnożenie()
+        {
+            var a =parseFloat(document.getElementById("a").value);
+            var b =parseFloat(document.getElementById("b").value);
+            document.getElementById("wynik").innerHTML= a*b;
+        }
+    </script>
+    <script>
+        function dzielenie()
+        {
+            var a =parseFloat(document.getElementById("a").value);
+            var b =parseFloat(document.getElementById("b").value);
+            document.getElementById("wynik").innerHTML= a/b;
+        }
+    </script>
+    <script>
+        function reszta()
+        {
+            var a =parseInt(document.getElementById("a").value);
+            var b =parseInt(document.getElementById("b").value);
+            document.getElementById("wynik").innerHTML= a%b;
+        }
+    </script>
+    <script>
+        function dzieleniecałk()
+        {
+            var a =parseFloat(document.getElementById("a").value);
+            var b =parseFloat(document.getElementById("b").value);
+            var c =parseInt(a/b);
+            document.getElementById("wynik").innerHTML= c;
+        }
+    </script>
+    
+</head>
+<body>
+    <h1>prosty kalkulator</h1>
+    <p>podaj a=</p>
+    <input type="text" id="a">
+    <p>podaj b=</p>
+    <input type="text" id="b">
+    <br></br>
+    <div id="wynik">TU UKAŻE SIĘ WYNIK</div>
+    <br></br>
+    <button onclick="dodawanie()">+</button>
+    <button onclick="odejmowanie()">-</button>
+    <button onclick="mnożenie()">*</button>
+    <button onclick="dzielenie()">/</button>
+    <button onclick="reszta()">%</button>
+    <button onclick="dzieleniecałk()">//</button>
+</body>
+</html>
